@@ -14,9 +14,8 @@ Publish commits `assets/edits.js` and new images, and the site redeploys in abou
 GitHub Pages serves the `main` branch directly. In the repository settings, set
 Pages, Source to "Deploy from a branch", branch `main`, folder `/ (root)`, once.
 
-## Search engines
+## Live site
 
-Every page has `<meta name="robots" content="noindex">`. Remove it from `index.html`
-and `mandiri.html` when the site should appear in search results.
+https://keisyazkafathaya2022.github.io/portofolio/
 
 Logo credits: `assets/clients/README.md`.

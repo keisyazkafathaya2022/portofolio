@@ -11,7 +11,7 @@
     ["index.html", "Home"],
     ["mandiri.html", "Micro credit case study"]
   ];
-  var DEFAULT_GH = { repo: "username/repo-name", branch: "main" };
+  var DEFAULT_GH = { repo: "keisyazkafathaya2022/portofolio", branch: "main" };
   // Folder of this site inside the repository, from <meta name="cms-dir">: "" at the root, "keisya/" for a copy in a subfolder.
   var SITE_DIR = ((document.querySelector('meta[name="cms-dir"]') || {}).content || "").replace(/^\/+/, "");
   var DEVICES = { desktop: 1280, tablet: 820, phone: 390 };
