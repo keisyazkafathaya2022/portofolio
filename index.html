@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Keisyazka Fathaya Putri · Micro Credit Analyst</title>
+  <meta name="description" content="Keisyazka Fathaya Putri, Micro Credit Analyst in East Jakarta. Credit and risk analysis, document review, business operations and market research." />
+  <meta name="theme-color" content="#cab9a7" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%237a6250'/><text x='32' y='43' text-anchor='middle' font-family='Arial' font-weight='800' font-size='30' fill='white'>K.</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Keisyazka Fathaya Putri, back to top">Keisyazka<span aria-hidden="true">.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Case study</a>
+        <a href="#experience">Experience</a>
+        <a href="#clients">Workplaces</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav__cv" data-cv target="_blank" rel="noopener">CV (PDF)</a>
+      <button class="nav__menu" id="burger" type="button" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" /></svg>
+        <span id="burgerLabel">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Shown by main.js when data.js is missing or a render fails. -->
+  <div class="app-error" id="appError" role="alert" hidden>
+    <div class="wrap">
+      <strong>This page couldn't load its content.</strong>
+      Refresh the page. If it keeps happening, email
+      <a href="mailto:keisyazka.putri@gmail.com">keisyazka.putri@gmail.com</a>.
+    </div>
+  </div>
+
+  <noscript>
+    <div class="app-error"><div class="wrap">
+      <strong>This portfolio needs JavaScript to show its content.</strong>
+      You can still <a href="assets/CV_Keisyazka_Fathaya_Putri.pdf">download the CV (PDF)</a>.
+    </div></div>
+  </noscript>
+
+  <main>
+    <section class="hero tone-blue" id="home" aria-labelledby="heroTitle">
+      <div class="wrap hero__inner">
+        <div class="hero__text">
+          <h1 id="heroTitle">Hi, I'm<br /><span class="hero__name" data-bind="name"></span></h1>
+          <p class="hero__role" data-bind="role"></p>
+          <p class="hero__lede" data-bind="tagline"></p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--light">Email Keisya</a>
+            <a href="#experience" class="btn btn--outline">See work history</a>
+            <a class="btn btn--outline" data-cv target="_blank" rel="noopener">Download CV (PDF)</a>
+          </div>
+          <dl class="figures" id="figures"></dl>
+          <p class="figures__source" data-bind="statsSource"></p>
+        </div>
+
+        <!-- Strap and clip are decoration; the card text is real content. -->
+        <div class="badge-area">
+          <div class="badge" id="badge">
+            <div class="badge__strap" aria-hidden="true"><span>KEISYA · KEISYA · KEISYA · KEISYA</span></div>
+            <div class="badge__clip" aria-hidden="true"></div>
+            <div class="badge__card">
+              <div class="badge__photo" id="badgePhoto" data-cms-photo></div>
+              <p class="badge__name" data-bind="name"></p>
+              <p class="badge__role" data-bind="role"></p>
+              <p class="badge__org">PT Bank Mandiri (Persero) Tbk.</p>
+            </div>
+          </div>
+          <p class="badge-hint" id="badgeHint">Drag the card to swing it</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="wrap about">
+        <div>
+          <h2 class="title" id="aboutTitle">About me</h2>
+          <div class="about__text" id="aboutText"><p class="state">Loading profile…</p></div>
+        </div>
+        <div class="about__side">
+          <img class="about__portrait" src="assets/portrait.png" alt="Keisyazka Fathaya Putri in a black blazer" width="560" height="499" loading="lazy" />
+          <aside class="panel about__facts" aria-labelledby="factsTitle">
+            <h3 id="factsTitle">At a glance</h3>
+            <dl id="facts"></dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tone-tint" id="services" aria-labelledby="servicesTitle">
+      <div class="wrap services">
+        <div class="services__head">
+          <h2 class="title" id="servicesTitle">What I do</h2>
+          <p class="intro">My work and experience span finance, business development and entrepreneurship.</p>
+        </div>
+        <ol class="reqs" id="reqs"><li class="state">Loading services…</li></ol>
+      </div>
+
+      <div class="wrap">
+        <h3 class="subtitle">How I review a credit application</h3>
+        <p class="intro intro--tight">Each step builds on the one before it, from the first look at the customer to the loan after it is paid out.</p>
+        <ol class="chain" id="docs"><li class="state">Loading steps…</li></ol>
+      </div>
+    </section>
+
+
+
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="wrap">
+        <h2 class="title" id="projectsTitle">Case study</h2>
+        <div class="cases" id="cases"><p class="state">Loading case study…</p></div>
+      </div>
+    </section>
+    <section class="section section--short" id="skills" aria-labelledby="skillsTitle">
+      <div class="wrap">
+        <h2 class="title" id="skillsTitle">Skills and tools</h2>
+        <div class="kit" id="kit"><p class="state">Loading skills…</p></div>
+      </div>
+    </section>
+
+    <section class="section band tone-blue" id="experience" aria-labelledby="experienceTitle">
+      <div class="wrap">
+        <h2 class="title" id="experienceTitle">Work history</h2>
+        <ol class="timeline" id="timeline"><li class="state">Loading work history…</li></ol>
+      </div>
+    </section>
+
+    <section class="section" id="clients" aria-labelledby="clientsTitle">
+      <div class="wrap">
+        <h2 class="title" id="clientsTitle">Where I have worked</h2>
+        <ul class="clients" id="clientsGrid"><li class="state">Loading clients…</li></ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="wrap">
+        <div class="contact tone-blue">
+          <div class="contact__text">
+            <h2 class="title" id="contactTitle">Get in touch</h2>
+            <p class="intro">Hiring for an analytical, risk, business planning or corporate role? Send me a note.</p>
+          </div>
+          <dl class="contact__list">
+            <div>
+              <dt>Email</dt>
+              <dd class="contact__email">
+                <span id="emailText" data-bind="email"></span>
+                <button type="button" class="copy" id="copyEmail">Copy</button>
+              </dd>
+            </div>
+            <div><dt>Phone and WhatsApp</dt><dd data-bind="phone"></dd></div>
+            <div><dt>Location</dt><dd data-bind="location"></dd></div>
+          </dl>
+          <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+          <div class="contact__actions">
+            <a class="btn btn--light" data-href="mailto">Email Keisya</a>
+            <a class="btn btn--outline" data-href="whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn--outline" data-href="linkedin" target="_blank" rel="noopener">LinkedIn profile</a>
+            <a class="btn btn--outline" data-href="github" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <span>© <span id="year"></span> <span data-bind="fullName"></span></span>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="assets/data.js" defer></script>
+  <script src="assets/main.js" defer></script>
+  <script src="assets/edits.js" defer></script>
+  <script src="assets/cms.js" defer></script>
+</body>
+</html>
